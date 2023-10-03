@@ -1,5 +1,5 @@
 broadcast-mode = "block"
-chain-id = "tenet_155-1"
+chain-id = "tenet_777-1"
 keyring-backend = "file"
-node = "tcp://localhost:26657"
+node = "tcp://167.99.202.253:26657"
 output = "text"

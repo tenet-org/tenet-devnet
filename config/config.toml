@@ -20,12 +20,12 @@ proxy_app = "tcp://127.0.0.1:26658"
   peer_gossip_sleep_duration = "100ms"
   peer_query_maj23_sleep_duration = "2s"
   skip_timeout_commit = false
-  timeout_commit = "5s"
+  timeout_commit = "3s"
   timeout_precommit = "1s"
   timeout_precommit_delta = "500ms"
   timeout_prevote = "1s"
   timeout_prevote_delta = "500ms"
-  timeout_propose = "3s"
+  timeout_propose = "1s"
   timeout_propose_delta = "500ms"
   wal_file = "data/cs.wal/wal"
 
@@ -35,7 +35,7 @@ proxy_app = "tcp://127.0.0.1:26658"
 [instrumentation]
   max_open_connections = 3
   namespace = "tendermint"
-  prometheus = false
+  prometheus = true
   prometheus_listen_addr = ":26660"
 
 [mempool]
@@ -55,7 +55,7 @@ proxy_app = "tcp://127.0.0.1:26658"
 [p2p]
   addr_book_file = "config/addrbook.json"
   addr_book_strict = true
-  allow_duplicate_ip = true
+  allow_duplicate_ip = false
   dial_timeout = "3s"
   external_address = ""
   flush_throttle_timeout = "100ms"
@@ -64,7 +64,7 @@ proxy_app = "tcp://127.0.0.1:26658"
   max_num_inbound_peers = 240
   max_num_outbound_peers = 30
   max_packet_msg_payload_size = 1024
-  persistent_peers = "d33c960bbd6ec46c5af8d37bbf8ce7db856919e1@64.226.82.155:26656"
+  persistent_peers = "5adfbdf6081255345cc221b65cc535aa190c216e@167.99.202.253:26656"
   persistent_peers_max_dial_period = "0s"
   pex = true
   private_peer_ids = ""
@@ -84,7 +84,7 @@ proxy_app = "tcp://127.0.0.1:26658"
   experimental_websocket_write_buffer_size = 200
   grpc_laddr = ""
   grpc_max_open_connections = 900
-  laddr = "tcp://0.0.0.0:26657"
+  laddr = ""
   max_body_bytes = 1000000
   max_header_bytes = 1048576
   max_open_connections = 900
